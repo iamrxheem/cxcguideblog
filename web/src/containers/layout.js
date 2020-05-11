@@ -1,16 +1,7 @@
 import { graphql, StaticQuery } from "gatsby";
 import React, { useState } from "react";
-import ReactGA from "react-ga";
+
 import Layout from "../components/layout";
-
-import "bootstrap/dist/css/bootstrap.css";
-import "shards-ui/dist/css/shards.css";
-
-ReactGA.initialize("UA-165932729-1");
-
-if (process.browser) {
-  ReactGA.pageview(window.location.pathname + window.location.search);
-}
 
 const query = graphql`
   query SiteTitleQuery {
